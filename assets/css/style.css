@@ -38,6 +38,8 @@ section.container-1 header.header {
     display: grid;
     place-items: center;
     justify-content: center;
+    z-index: 1;
+    position: sticky;
 }
 
 section.container-1 div.mini-header {
@@ -77,7 +79,6 @@ section.container-1 header.header nav.navbar ul li {
     letter-spacing: 0.12px;
     font-family: sans-serif;
     font-weight: 100;
-    /* line-height: 35px; */
 }
 
 section.container-1 header.header nav.navbar ul li a {
@@ -398,7 +399,7 @@ section.container-4 .part-2 {
     padding-bottom: 350px;
 }
 
-.part-1 a {
+section.container-4 .part-1 a {
     letter-spacing: 0.231px;
     font-size: 16px;
     font-family: sans-serif;
@@ -410,19 +411,19 @@ section.container-4 .part-2 {
     padding-left: 40px;
 }
 
-.part-1 a.special-1 {
+section.container-4 .part-1 a.special-1 {
     grid-area: a1-group;
 }
 
-.part-1 a.special-2 {
+section.container-4 .part-1 a.special-2 {
     grid-area: a2-group;
 }
 
-.part-1 a:hover {
+section.container-4 .part-1 a:hover {
     text-decoration: underline;
 }
 
-.part-1 h2 {
+section.container-4 .part-1 h2 {
     letter-spacing: 0.231px;
     font-size: 24px;
     font-family: sans-serif;
@@ -432,7 +433,7 @@ section.container-4 .part-2 {
     /* text-align: center; */
 }
 
-.part-1 h1 {
+section.container-4 .part-1 h1 {
     letter-spacing: 0.231px;
     font-size: 40px;
     font-family: sans-serif;
@@ -443,7 +444,7 @@ section.container-4 .part-2 {
     place-items: center;
 }
 
-.part-2 a {
+section.container-4 .part-2 a {
     letter-spacing: 0.231px;
     font-size: 16px;
     font-family: sans-serif;
@@ -455,19 +456,19 @@ section.container-4 .part-2 {
     padding-left: 40px;
 }
 
-.part-21 a.special-1 {
+section.container-4 .part-21 a.special-1 {
     grid-area: a1-group;
 }
 
-.part-2 a.special-2 {
+section.container-4 .part-2 a.special-2 {
     grid-area: a2-group;
 }
 
-.part-2 a:hover {
+section.container-4 .part-2 a:hover {
     text-decoration: underline;
 }
 
-.part-2 h2 {
+section.container-4 .part-2 h2 {
     letter-spacing: 0.231px;
     font-size: 24px;
     font-family: sans-serif;
@@ -477,7 +478,7 @@ section.container-4 .part-2 {
     /* text-align: center; */
 }
 
-.part-2 h1 {
+section.container-4 .part-2 h1 {
     letter-spacing: 0.231px;
     font-size: 40px;
     font-family: sans-serif;
@@ -486,4 +487,315 @@ section.container-4 .part-2 {
     grid-area: h1-group;
     display: grid;
     place-items: center;
+}
+
+
+
+section.container-5 {
+    height: 100vh;
+    display: grid;
+    grid-template: 
+    "main-5-1 main-5-2" 1fr /
+    0.5fr 0.5fr;
+    align-content: start;
+}
+
+section.container-5 main.main-5-1 {
+    display:grid;
+    place-items: center;
+    background-image: url("../images/main/tile_homepod_mini__b73w4z3ljymu_large.jpg");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: center;
+    /* height: 100vh; */
+    grid-area: main-5-1;
+}
+
+section.container-5 main.main-5-2 {
+    display:grid;
+    place-items: center;
+    background-image: url("../images/main/promo_ipad_mini__spq4zjcuuaie_large.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    /* height: 100vh; */
+    grid-area: main-5-2;
+}
+
+section.container-5 .part-1 {
+    display: grid;
+    grid-template: 
+    "h1-group h1-group" 1fr
+    "h2-group h2-group" 1fr
+    "a1-group a2-group" auto /
+    1fr 1fr;
+    grid-gap: 5px;
+    justify-content: center;
+    place-items: center;
+    padding-bottom: 350px;
+}
+
+section.container-5 .part-2 {
+    display: grid;
+    grid-template: 
+    "h1-group h1-group" 1fr
+    "h2-group h2-group" 1fr
+    "a1-group a2-group" auto /
+    1fr 1fr;
+    grid-gap: 5px;
+    justify-content: center;
+    place-items: center;
+    padding-bottom: 350px;
+}
+
+section.container-5 .part-1 a {
+    letter-spacing: 0.231px;
+    font-size: 16px;
+    font-family: sans-serif;
+    /* text-align: center; */
+    color: #0066cc;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    padding-left: 40px;
+}
+
+section.container-5 .part-1 a.special-1 {
+    grid-area: a1-group;
+}
+
+section.container-5 .part-1 a.special-2 {
+    grid-area: a2-group;
+}
+
+section.container-5 .part-1 a:hover {
+    text-decoration: underline;
+}
+
+section.container-5 .part-1 h2 {
+    letter-spacing: 0.231px;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #392a4493;
+    grid-area: h2-group;
+    /* text-align: center; */
+}
+
+section.container-5 .part-1 h1 {
+    letter-spacing: 0.231px;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #000;
+    grid-area: h1-group;
+    display: grid;
+    place-items: center;
+}
+
+section.container-5 .part-2 a {
+    letter-spacing: 0.231px;
+    font-size: 16px;
+    font-family: sans-serif;
+    /* text-align: center; */
+    color: #0066cc;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    padding-left: 40px;
+}
+
+section.container-5 .part-2 a.special-1 {
+    grid-area: a1-group;
+}
+
+section.container-5 .part-2 a.special-2 {
+    grid-area: a2-group;
+}
+
+section.container-5 .part-2 a:hover {
+    text-decoration: underline;
+}
+
+section.container-5 .part-2 h2 {
+    letter-spacing: 0.231px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #1d1d1f;
+    grid-area: h2-group;
+    /* text-align: center; */
+}
+
+section.container-5 .part-2 h1 {
+    letter-spacing: 0.231px;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #000;
+    grid-area: h1-group;
+    display: grid;
+    place-items: center;
+}
+
+
+section.container-6 {
+    height: 100vh;
+    display: grid;
+    grid-template: 
+    "main-6-1 main-6-2" 1fr /
+    0.5fr 0.5fr;
+    align-content: start;
+}
+
+section.container-6 main.main-6-1 {
+    display:grid;
+    place-items: center;
+    background-image: url("../images/main/tile__cauwwcyyn9hy_large.jpg");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: center;
+    /* height: 100vh; */
+    grid-area: main-6-1;
+}
+
+section.container-6 main.main-6-2 {
+    display:grid;
+    place-items: center;
+    background-image: url("../images/main/tile_charliebrown__eolk1igxqpw2_large.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    /* height: 100vh; */
+    grid-area: main-6-2;
+}
+
+section.container-6 .part-1 {
+    display: grid;
+    grid-template: 
+    "special special" 1fr
+    "h2-group h2-group" 1fr
+    "a1-group a2-group" auto /
+    1fr 1fr;
+    grid-gap: 5px;
+    justify-content: center;
+    place-items: center;
+    padding-bottom: 350px;
+}
+section.container-6 .special-icon {
+    grid-area: special;
+}
+
+section.container-6 .part-2 {
+    display: grid;
+    grid-template: 
+    "special-icon" 1fr
+    "p-special" 1fr /
+    1fr;
+    grid-row-gap: 200px;
+    justify-content: center;
+    place-items: center;
+}
+
+section.container-6 .part-2 .special-icon {
+    grid-area: special-icon;
+}
+
+section.container-6 .part-2 .p-special {
+    grid-area: p-special;
+}
+
+section.container-6 .part-1 a {
+    letter-spacing: 0.231px;
+    font-size: 18px;
+    font-family: sans-serif;
+    /* text-align: center; */
+    color: #0066cc;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    padding-left: 40px;
+}
+
+section.container-6 .part-1 a.special-1 {
+    grid-area: a1-group;
+}
+
+section.container-6 .part-1 a.special-2 {
+    grid-area: a2-group;
+}
+
+section.container-6 .part-1 a:hover {
+    text-decoration: underline;
+}
+
+section.container-6 .part-1 h2 {
+    letter-spacing: 0.1px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #1d1d1f;
+    grid-area: h2-group;
+    /* text-align: center; */
+}
+
+section.container-6 .part-1 span {
+    letter-spacing: 0.231px;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #000;
+    /* text-align: center; */
+}
+
+section.container-6 .part-2 .p-special a {
+    letter-spacing: 0.231px;
+    font-size: 18px;
+    font-family: sans-serif;
+    /* text-align: center; */
+    color: #0066cc;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+}
+
+section.container-6 .part-2 .p-special p {
+    letter-spacing: 0.231px;
+    font-size: 18px;
+    font-family: sans-serif;
+    /* text-align: center; */
+    color: #1d1d1f;
+    display: grid;
+    place-items: center;
+}
+
+section.container-6 .part-2 .p-special a:hover {
+    text-decoration: underline;
+}
+
+section.container-6 .part-2 .p-special h4 {
+    letter-spacing: 0.231px;
+    font-size: 26px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #1d1d1f;
+    display: grid;
+    place-items: center;
+}
+
+section.container-6 .part-2 .p-special h3 {
+    letter-spacing: 0.231px;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #000;
+    display: grid;
+    place-items: center;
+}
+
+section.container-6 .part-2 .special-icon span {
+    font-size: 38px;
+    font-weight: 900;
+}
+
+section.container-6 .part-2 .special-icon {
+    padding-bottom: 70px;
 }
