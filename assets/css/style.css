@@ -46,7 +46,11 @@ section.container-1 div.mini-header {
 section.container-1 main.main {
     grid-area: main;
     outline: 0.5px solid #000;
-    background-color: #fbfbfd;
+    /* background-color: #fbfbfd; */
+    display: grid;
+    place-items: center;
+    grid-template-rows: 1fr 1.5fr;
+    /* grid-gap: 10px; */
 }
 
 section.container-1 header.header nav.navbar {
@@ -94,8 +98,8 @@ section.container-1 div.mini-header {
 section.container-1 div.mini-header p {
     font-size: 14px;
     font-family: sans-serif;
-    text-align: center;
-    letter-spacing: 0.374px;
+    /* text-align: center; */
+    letter-spacing: 0.3px;
     color: #2b2b38;
     font-weight: 500;
 }
@@ -112,4 +116,68 @@ section.container-1 div.mini-header p a:hover {
 section.container-1 main.main a:hover {
     text-decoration: underline;
     transition: 1s;
+}
+
+section.container-1 main.main .group-1 {
+    display: grid;
+    grid-template: 
+    "h1-group h1-group" 1fr
+    "h2-group h2-group" 1fr
+    "a1-group a2-group" auto /
+    1fr 1fr;
+    grid-gap: 5px;
+}
+
+.group-1 a {
+    letter-spacing: 0.231px;
+    font-size: 21px;
+    font-family: sans-serif;
+    /* text-align: center; */
+    color: #0066cc;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+}
+
+.group-1 a#special-1 {
+    grid-area: a1-group;
+}
+
+.group-1 a#special-2 {
+    grid-area: a2-group;
+}
+
+.group-1 a:hover {
+    text-decoration: underline;
+}
+
+.group-1 h2 {
+    letter-spacing: 0.231px;
+    font-size: 36px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #1d1d1f;
+    grid-area: h2-group;
+    /* text-align: center; */
+    display: grid;
+    place-items: center;
+}
+
+.group-1 h1 {
+    letter-spacing: 0.231px;
+    font-size: 56px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #1d1d1f;
+    grid-area: h1-group;
+}
+
+.group-2 {
+    display: grid; 
+    place-items: center;
+}
+
+section.container-1 main.main .group-2 img {
+    width: 100%;
+    height: 100%;
 }
